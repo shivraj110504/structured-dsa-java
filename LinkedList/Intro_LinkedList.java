@@ -54,6 +54,15 @@ public class Intro_LinkedList {
         return -1;  // element not found
     }
 
+    // remove heads
+    private static Node removeHead(Node head){
+        if(head == null){
+            return null; // empty list
+        }
+        head = head.next;
+        return head;
+    }
+
     public static void main(String[] args) {
         int[] arr = {2, 5, 6, 8};
         // Node y = new Node(arr[3]);
@@ -78,6 +87,16 @@ public class Intro_LinkedList {
         // print the linked list
         // for traversing the linked list (including above code)
         
+        // Node temp = head;
+        // while (temp != null) {
+        //     System.out.println(temp.data);
+        //     temp = temp.next;
+        // }
+
+        // ---------------------------------------------------------------------------------
+        // remove head
+        head = removeHead(head);
+        System.out.println("After removing head:");
         Node temp = head;
         while (temp != null) {
             System.out.println(temp.data);
