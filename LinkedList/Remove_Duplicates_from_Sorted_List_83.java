@@ -39,8 +39,15 @@ public class Remove_Duplicates_from_Sorted_List_83 {
 // |______/ \______/ |__/  \__/ \______/ |__/  |__/|________/     |__/      |__/  |__/|__/  |__/   |__/ 
 
     public static void main(String[] args) {
+        
+
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(1);
+        head.next.next = new ListNode(2);
+        head.next.next.next = new ListNode(3);
+        head.next.next.next.next = new ListNode(3);
+
         Remove_Duplicates_from_Sorted_List_83 solution = new Remove_Duplicates_from_Sorted_List_83();
-        ListNode head = new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3)))));
         ListNode result = solution.deleteDuplicates(head);
 
         // Print the modified linked list
