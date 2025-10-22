@@ -1,6 +1,6 @@
 public class Maximum_Frequency_of_an_Element_After_Performing_Operations_I_3346 {
 
-    class Solution {
+    static class Solution {
         public int maxFrequency(int[] nums, int k, int numOperations) {
             int n = 0;
             for (int num : nums) {
