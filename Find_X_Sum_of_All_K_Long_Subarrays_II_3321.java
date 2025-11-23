@@ -118,7 +118,7 @@ public class Find_X_Sum_of_All_K_Long_Subarrays_II_3321 {
         Solution sol = new Solution();
         int[] nums = { 1,1,2,2,3,4,2,3 };
         int k = 6;
-        int x = 2;
+        int x = 2; 
         long[] result = sol.findXSum(nums, k, x);
         for (long val : result) {
             System.out.print(val + " ");
